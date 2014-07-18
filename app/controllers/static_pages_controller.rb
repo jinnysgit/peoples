@@ -5,12 +5,10 @@ class StaticPagesController < ApplicationController
   def about_us
   end
 
-  def report
+  def contact_us
   end
 
   def faq
   end
 
-  def sign_in
-  end
 end

@@ -1,9 +1,9 @@
 Peoples::Application.routes.draw do
+  root 'static_pages#home'
   get "static_pages/home"
   get "static_pages/about_us"
-  get "static_pages/report"
   get "static_pages/faq"
-  get "static_pages/sign_in"
+  get "static_pages/contact_us"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
