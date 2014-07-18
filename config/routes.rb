@@ -1,8 +1,6 @@
 Peoples::Application.routes.draw do
   get "static_pages/home"
   get "static_pages/about_us"
-  get "static_pages/maps"
-  get "static_pages/data"
   get "static_pages/report"
   get "static_pages/faq"
   get "static_pages/sign_in"

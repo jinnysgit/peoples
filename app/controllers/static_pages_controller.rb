@@ -5,12 +5,6 @@ class StaticPagesController < ApplicationController
   def about_us
   end
 
-  def maps
-  end
-
-  def data
-  end
-
   def report
   end
 
