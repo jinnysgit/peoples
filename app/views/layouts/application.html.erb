@@ -39,6 +39,9 @@
 <body>
 <%= render 'layouts/header' %>
 
+<% if notice %>
+	<div class="container"><div class="alert"><%= notice %></div></div>
+<% end %>
 <% if alert %>
 	<div class="container"><div class="alert alert-error"> <%= alert %> </div></div>
 <% end %>
