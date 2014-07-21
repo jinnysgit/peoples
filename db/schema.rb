@@ -14,11 +14,10 @@
 ActiveRecord::Schema.define(version: 20140721050707) do
 
   create_table "users", force: true do |t|
-    t.string   "name",                   default: "",  null: false
+    t.string   "name",                                 null: false
     t.string   "email",                  default: "",  null: false
     t.string   "encrypted_password",     default: "",  null: false
-    t.string   "city",                   default: "",  null: false
-    t.string   "address",                default: "",  null: false
+    t.string   "address",                              null: false
     t.float    "latitude",               default: 0.0, null: false
     t.float    "longitude",              default: 0.0, null: false
     t.string   "reset_password_token"
