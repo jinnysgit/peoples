@@ -16,8 +16,8 @@
   <div><%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
-  <div><%= f.label :city %>
-  <%= select_tag(:city, options_for_select([['Lisbon', 1], ['Madrid', 2]])) %>
+  <div><%= f.label :address %>
+  <%= f.text_field :address  %></div>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>
