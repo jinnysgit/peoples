@@ -13,7 +13,7 @@
 						<!-- start: Footer Menu Logo -->
 						<div class="span1">
 							<div id="footer-menu-logo">
-								<a href="<%= root_path %>"><img src="/assets/bootstrap/logo-footer-menu.png" alt="logo" /></a>
+								<a href="<%= root_path %>"><img src="/assets/bootstrap/logo2.png" alt="logo" /></a>
 							</div>
 						</div>
 						<!-- end: Footer Menu Logo -->
@@ -31,7 +31,11 @@
 
 									<li><a href="<%= contact_path %>">Contact</a></li>
 
-									<li><a href="#">Sign in</a></li>
+									<% if user_signed_in? %>
+										<li><a href="<%= destroy_user_session_path %>" data-method="delete">Sign out</a></li>
+									<% else %>
+										<li><a href="<%= signin_path %>">Sign in</a></li>
+									<% end %>
 
 								</ul>
 

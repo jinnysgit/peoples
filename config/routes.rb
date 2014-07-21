@@ -1,4 +1,14 @@
 Peoples::Application.routes.draw do
+  
+
+devise_scope :user do
+  get "signin", to: "devise/sessions#new", as: "signin"
+  get "signup", to: "devise/registrations#new", as: "signup"
+end
+
+devise_for :users
+
+
   root 'static_pages#home'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
