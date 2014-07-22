@@ -1166,6 +1166,10 @@ textarea::-webkit-input-placeholder {
   width: 270px;
 }
 
+.input-x1large {
+  width: 400px;
+}
+
 .input-xxlarge {
   width: 530px;
 }
